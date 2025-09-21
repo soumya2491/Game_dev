@@ -25,8 +25,8 @@ export default function CresomaWhiteboard() {
       ctx.stroke();
     };
 
-//     socket.on('draw', handleDraw);
-//     socket.on('chat', msg => setChat(prev => [...prev, msg]));
+    socket.on('draw', handleDraw);
+    socket.on('chat', msg => setChat(prev => [...prev, msg]));
 
 //     return () => {
 //       socket.off('draw', handleDraw);
